@@ -1,0 +1,9 @@
+<div>
+    <span ng-repeat="interest in interests">
+        <label for="{{interest.name}}">
+            <input type="checkbox" ng-model="interest.selected">{{interest.name}}
+        </label>
+        <br>
+    </span>
+    <button class="btn btn-lg btn-success" ng-click="checkInterests();next(nextStep)">Next</button>
+</div>

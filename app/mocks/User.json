@@ -1,0 +1,18 @@
+{
+    "accountType": "Light",
+    "stepOne": {
+      "userName": "Gabriela_Garner",
+      "firstName": "Gabriela",
+      "lastName": "Garner",
+      "email": "GabrielaGarner@fakeEmail.com"
+    },
+    "stepTwo": {
+      "optIn": false
+    },
+    "stepThree": {
+      "interests": []
+    },
+    "stepFour": {
+      "optIn": false
+    }
+}

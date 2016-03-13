@@ -1,0 +1,11 @@
+<div>
+    <h4 ng-if="userData.accountType === 'Light'">You are current a Light account user, do you want to opt in to become a Standard account user?</h4>
+    <h4 ng-if="userData.accountType === 'Standard' && userData.stepThree.interests.length < 4">You are current a Standard account user, but you have less then four interests, do you want to opt out to become a Light account user or go to next step to add more interests in order to upgrade?</h4>
+    <h4 ng-if="userData.accountType === 'Standard' && userData.stepThree.interests.length > 4">You are current a Standard account user, do you want to opt out to become a Light account user</h4>
+    <div>
+        <button class="btn btn-lg btn-primary" ng-click="next(userData, 'step_one')">Back</button>
+        <button ng-click="optInOrOut('in');next('/step_three')" ng-if="userData.accountType === 'Light'" class="btn btn-lg btn-success">Opt In</button>
+        <button ng-click="optInOrOut('out');next('/step_one')" ng-if="userData.accountType === 'Standard'" class="btn btn-lg btn-warning">Opt Out</button>
+        <button ng-click="optInOrOut('in');next('/step_three')" ng-if="userData.accountType === 'Standard'" class="btn btn-lg btn-success">Next</button>
+    </div>
+</div>

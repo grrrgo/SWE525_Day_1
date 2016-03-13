@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wizard</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-app="Wizard">
+<div class="container" ng-controller="MainCtrl">
+    <h1>The Wizard</h1>
+    <user-summary class="col-xs-4"></user-summary>
+    <div ui-view class="col-xs-8"></div>
+</div>
+
+
+<!--libs-->
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<!--app-->
+<script src="../app/scripts/app.js"></script>
+<script src="../app/scripts/configs.js"></script>
+<script src="../app/scripts/constants.js"></script>
+
+<!--directives-->
+<script src="../app/directives/UserSummary.js"></script>
+<!--filters-->
+<!--services-->
+<script src="../app/services/UserService.js"></script>
+<script src="../app/services/ObserverService.js"></script>
+<!--controllers-->
+<script src="../app/controllers/MainController.js"></script>
+<script src="../app/controllers/StepFourController.js"></script>
+<script src="../app/controllers/StepOneController.js"></script>
+<script src="../app/controllers/StepThreeController.js"></script>
+<script src="../app/controllers/StepTwoController.js"></script>
+
+
+</body>
+</html>
