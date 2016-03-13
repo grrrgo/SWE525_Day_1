@@ -1,0 +1,12 @@
+<div class="container">
+    <div ng-if="userData.stepOne.userName">username: {{userData.stepOne.userName}}</div>
+    <div ng-if="userData.stepOne.firstName">first name: {{userData.stepOne.firstName}}</div>
+    <div ng-if="userData.stepOne.lastName">last name: {{userData.stepOne.lastName}}</div>
+    <div ng-if="userData.stepOne.email">email: {{userData.stepOne.email}}</div>
+    <div ng-if="userData.accountType">account type: {{userData.accountType}}</div>
+    <div ng-if="userData.stepThree.interests.length">interests:
+        <div ng-repeat="interest in userData.stepThree.interests">
+            {{interest}}
+        </div>
+    </div>
+</div>

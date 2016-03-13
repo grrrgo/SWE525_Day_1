@@ -1,0 +1,7 @@
+<div>
+    <h4 ng-if="userData.accountType === 'Plus'">You are current a Plus account user, do you want to opt in to become a Premium account user?</h4>
+    <h4 ng-if="userData.accountType === 'Premium'">You are current a Premium account user!</h4>
+    <div>
+        <button ng-click="optIn();next('/step_four')" ng-if="userData.accountType === 'Plus'" class="btn btn-lg btn-success">Opt In</button>
+    </div>
+</div>
